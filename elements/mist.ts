@@ -1,5 +1,5 @@
 // Add your code here
-let mySprite = sprites.create(img`
+let mist = sprites.create(img`
     . . . . . . . . . . . . . . . .
     . 1 1 1 . . . . . 1 1 1 . . . .
     . . . . . 1 1 1 . . . . . 1 1 1

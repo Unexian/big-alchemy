@@ -18,8 +18,9 @@
         "elements/mud.ts",
         "elements/air.ts",
         "elements/lava.ts",
-        "elements/energy.ts",
-        "elements/mist.ts"
+        "elements/mist.ts",
+        "elements/smoke.ts",
+        "elements/energy.ts"
     ],
     "testFiles": [
         "test.ts"

@@ -12,6 +12,7 @@
         "elements/water.ts",
         "classes/element.ts",
         "game/gameMaganer.ts",
+        "game/cursor.ts",
         "elements/fire.ts"
     ],
     "testFiles": [

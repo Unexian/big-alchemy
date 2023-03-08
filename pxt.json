@@ -10,7 +10,6 @@
         "README.md",
         "assets.json",
         "elements/water.ts",
-        "classes/element.ts",
         "game/gameMaganer.ts",
         "elements/fire.ts",
         "elements/earth.ts",
@@ -22,7 +21,8 @@
         "elements/smoke.ts",
         "elements/energy.ts",
         "elements/steam.ts",
-        "elements/dust.ts"
+        "elements/dust.ts",
+        "element.ts"
     ],
     "testFiles": [
         "test.ts"

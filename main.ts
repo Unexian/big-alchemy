@@ -1,4 +1,6 @@
 namespace SpriteKind {
     export const Element = SpriteKind.create()
 }
-new GameManager()
+
+let elements = []
+let gameMngr = new GameManager()

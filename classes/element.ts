@@ -16,4 +16,9 @@ class Element {
         sprite.setScale(1/this.scale, ScaleAnchor.Middle)
         return sprite
     }
+
+    merge(other: Sprite) {
+        let otherElement = other.data.name
+        let elementTo = this.combos[otherElement]
+    }
 }

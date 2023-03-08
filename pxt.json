@@ -14,7 +14,8 @@
         "game/gameMaganer.ts",
         "elements/fire.ts",
         "elements/earth.ts",
-        "game/cursor.ts"
+        "game/cursor.ts",
+        "elements/air.ts"
     ],
     "testFiles": [
         "test.ts"

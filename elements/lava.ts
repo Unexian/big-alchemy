@@ -1,5 +1,5 @@
 // Add your code here
-let lava = sprites.create(img`
+let lava = new Element("Lava", {}, img`
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
     . . . . . . . . 2 2 . . . . . .
@@ -16,4 +16,4 @@ let lava = sprites.create(img`
     . . 2 2 4 4 4 4 4 4 2 2 . . . .
     . . . . 2 2 2 2 2 2 . . . . . .
     . . . . . . 2 2 2 . . . . . . .
-`, SpriteKind.Player)
+`, 1)

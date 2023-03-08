@@ -1,5 +1,5 @@
 // Add your code here
-let fire = sprites.create(img`
+let fire = new Element("Fire", {  }, img`
     . . . . . . . . . . . . . . . .
     . . . . . . . 2 2 2 . . . . . .
     . . . . . . . 2 4 2 . . . . . .
@@ -16,4 +16,4 @@ let fire = sprites.create(img`
     . . . 2 2 4 5 5 5 5 5 4 2 2 . .
     . . . . 2 2 4 4 4 4 4 2 2 . . .
     . . . . . 2 2 2 2 2 2 2 . . . .
-`, SpriteKind.Player)
+`, 1)

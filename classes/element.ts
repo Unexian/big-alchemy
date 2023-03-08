@@ -1,11 +1,17 @@
 class Element {
     name: String
-    combos: {String: String}
+    combos: {[key: string]: string}
     sprite: Image
 
-    constructor (name: String, combos: {String: String}, sprite: Image) {
+    constructor(name: String, combos: { [key: string]: string } = {}, sprite: Image) {
         this.name = name
         this.combos = combos
         this.sprite = sprite
+    }
+
+    toSprite(): Sprite {
+        let sprite = sprites.create(this.sprite, SpriteKind.Element)
+        sprite.data = this
+        return sprite
     }
 }

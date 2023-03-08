@@ -1,5 +1,7 @@
 // Add your code here
-let fire = new Element("Fire", { "Earth": "Lava", "Fire": "Energy" }, img`
+let fire = new Element("Fire",
+    { "Earth": "Lava", "Fire": "Energy", "Water": "Steam", "Air": "Smoke" },
+    img`
     . . . . . . . . . . . . . . . .
     . . . . . . . 2 2 2 . . . . . .
     . . . . . . . 2 4 2 . . . . . .

@@ -17,7 +17,8 @@
         "game/cursor.ts",
         "elements/mud.ts",
         "elements/air.ts",
-        "elements/lava.ts"
+        "elements/lava.ts",
+        "elements/mist.ts"
     ],
     "testFiles": [
         "test.ts"

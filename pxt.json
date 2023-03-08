@@ -20,7 +20,8 @@
         "elements/lava.ts",
         "elements/mist.ts",
         "elements/smoke.ts",
-        "elements/energy.ts"
+        "elements/energy.ts",
+        "elements/steam.ts"
     ],
     "testFiles": [
         "test.ts"

@@ -9,20 +9,9 @@
         "main.ts",
         "README.md",
         "assets.json",
-        "elements/water.ts",
-        "game/gameMaganer.ts",
-        "elements/fire.ts",
-        "elements/earth.ts",
-        "game/cursor.ts",
-        "elements/mud.ts",
-        "elements/air.ts",
-        "elements/lava.ts",
-        "elements/mist.ts",
-        "elements/smoke.ts",
-        "elements/energy.ts",
-        "elements/steam.ts",
-        "elements/dust.ts",
-        "element.ts"
+        "element.ts",
+        "gameManager.ts",
+        "elementList.ts"
     ],
     "testFiles": [
         "test.ts"

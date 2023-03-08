@@ -1,5 +1,7 @@
 // Add your code here
-let water = new Element("Water", {"Earth": "Mud"}, img`
+let water = new Element("Water",
+    {"Earth": "Mud", "Air": "Mist", "Fire": "Steam", "Water": "Puddle"},
+    img`
     . . . . . . . . . . . . . . . .
     . . . . . . . 9 9 9 . . . . . .
     . . . . . . . 9 8 9 . . . . . .

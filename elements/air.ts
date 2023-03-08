@@ -1,5 +1,7 @@
 // Add your code here
-let air = new Element("Air", {  }, img`
+let air = new Element("Air",
+    { "Fire": "Smoke", "Water": "Mist", "Earth": "Dust", "Air": "Pressure" },
+    img`
     . . . . . . . . . . . . . . . .
     . 1 . . . . . . . 1 . . . . . .
     1 1 1 . . 1 . . 1 1 1 . . 1 . .

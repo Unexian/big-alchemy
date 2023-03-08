@@ -11,7 +11,8 @@
         "assets.json",
         "elements/water.ts",
         "classes/element.ts",
-        "game/gameMaganer.ts"
+        "game/gameMaganer.ts",
+        "elements/fire.ts"
     ],
     "testFiles": [
         "test.ts"

@@ -1,5 +1,5 @@
 // Add your code here
-let water = sprites.create(img`
+let fire = sprites.create(img`
     . . . . . . . . . . . . . . . .
     . . . . . . . 9 9 9 . . . . . .
     . . . . . . . 9 8 9 . . . . . .

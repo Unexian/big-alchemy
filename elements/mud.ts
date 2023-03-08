@@ -1,5 +1,5 @@
 // Add your code here
-let mud = new Element("Mud", {}, img`
+elements.mud = new Element("Mud", {}, img`
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .

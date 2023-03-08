@@ -1,4 +1,4 @@
-let mist = new Element("Mist", {}, img`
+elements.mist = new Element("Mist", {}, img`
     . . . . . . . . . . . . . . . .
     . 1 1 1 . . . . . 1 1 1 . . . .
     . . . . . 1 1 1 . . . . . 1 1 1

@@ -1,5 +1,5 @@
 // Add your code here
-let earth = new Element("Earth", { "Water": "Mud", "Fire": "Lava" }, img`
+elements.earth = new Element("Earth", { "Water": "Mud", "Fire": "Lava" }, img`
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .

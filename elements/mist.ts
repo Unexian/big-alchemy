@@ -1,5 +1,4 @@
-// Add your code here
-let mist = sprites.create(img`
+let mist = new Element("Mist", {}, img`
     . . . . . . . . . . . . . . . .
     . 1 1 1 . . . . . 1 1 1 . . . .
     . . . . . 1 1 1 . . . . . 1 1 1
@@ -16,4 +15,4 @@ let mist = sprites.create(img`
     . 1 1 1 . . . . . 1 1 1 . . . .
     . . . . . 1 1 1 . . . . . 1 1 1
     . . . . . . . . . . . . . . . .
-`, SpriteKind.Player)
+`, 1)

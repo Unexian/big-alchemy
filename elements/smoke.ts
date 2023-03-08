@@ -1,5 +1,4 @@
-// Add your code here
-let smoke = sprites.create(img`
+let smoke = new Element("Smoke", {}, img`
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
@@ -16,4 +15,4 @@ let smoke = sprites.create(img`
     . . . . f f f f f f f . . . . .
     . . . . . f f f f f f . . . . .
     . . . . . . . f f . . . . . . .
-`, SpriteKind.Player)
+`, 1)

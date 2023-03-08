@@ -8,7 +8,10 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "assets.json"
+        "assets.json",
+        "elements/water.ts",
+        "classes/element.ts",
+        "game/gameMaganer.ts"
     ],
     "testFiles": [
         "test.ts"

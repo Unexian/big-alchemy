@@ -1,1 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="];#T={=gXD-:iEfxv=I1">Element</variable></variables><block type="pxt-on-start" id="Q2;/A}JS^NA)%]6q,B3~" x="0" y="0"><statement name="HANDLER"><block type="typescript_statement" id="g|D{)74Mkwwy6H@qc~*$" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="new GameManager()" numlines="1"></mutation></block></statement></block></xml>

@@ -15,6 +15,7 @@
         "elements/fire.ts",
         "elements/earth.ts",
         "game/cursor.ts",
+        "elements/mud.ts",
         "elements/air.ts"
     ],
     "testFiles": [

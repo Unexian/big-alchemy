@@ -1,6 +1,5 @@
 // Add your code here
-
-let earth = sprites.create(img`
+let earth = new Element("Earth", { "Water": "Mud" }, img`
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
@@ -17,4 +16,4 @@ let earth = sprites.create(img`
     . . e e e e e e e e e e e e . .
     . e e e e e e e e e e e e e e .
     e e e e e e e e e e e e e e e e
-`, SpriteKind.Player)
+`, 1)

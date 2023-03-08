@@ -1,5 +1,5 @@
 // Add your code here
-let water = sprites.create(img`
+let water = new Element("Water", {}, img`
     . . . . . . . . . . . . . . . .
     . . . . . . . 9 9 9 . . . . . .
     . . . . . . . 9 8 9 . . . . . .
@@ -16,4 +16,5 @@ let water = sprites.create(img`
     . . . 9 9 8 9 9 9 9 9 8 9 9 . .
     . . . . 9 9 8 8 8 8 8 9 9 . . .
     . . . . . 9 9 9 9 9 9 9 . . . .
-`, SpriteKind.Player)
+`
+)

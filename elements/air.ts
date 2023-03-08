@@ -1,5 +1,5 @@
 // Add your code here
-elements.air = new Element("Air", {  }, img`
+let air = new Element("Air", {  }, img`
     . . . . . . . . . . . . . . . .
     . 1 . . . . . . . 1 . . . . . .
     1 1 1 . . 1 . . 1 1 1 . . 1 . .

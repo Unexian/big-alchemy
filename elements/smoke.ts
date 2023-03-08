@@ -1,4 +1,4 @@
-elements.smoke = new Element("Smoke", {}, img`
+let smoke = new Element("Smoke", {}, img`
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .

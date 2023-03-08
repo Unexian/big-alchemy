@@ -1,5 +1,5 @@
 // Add your code here
-elements.energy = new Element("Energy", {  }, img`
+let energy = new Element("Energy", {  }, img`
     . . 5 5 5 5 5 5 5 5 5 5 5 5 . .
     . 5 . . . . . . . . . . . . 5 .
     5 . . . . . . . . . . . . . . 5

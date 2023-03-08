@@ -1,5 +1,5 @@
 // Add your code here
-elements.lava = new Element("Lava", {}, img`
+let lava = new Element("Lava", {}, img`
     . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . .
     . . . . . . . . 2 2 . . . . . .

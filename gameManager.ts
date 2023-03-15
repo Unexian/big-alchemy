@@ -16,12 +16,12 @@ class GameManager {
         this.field[1] = elementList.Water.toSprite()
 
         controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-            for (let i of sprites.allOfKind(SpriteKind.Element)) {
+            sprites.allOfKind(SpriteKind.Element).forEach(function (i) {
                 if (this.cursor.overlapsWith(i)) {
                     controller.moveSprite(i, 100, 100)
-                    break
+                    return
                 }
-            }
+            })
         })
         controller.A.onEvent(ControllerButtonEvent.Released, function () {
             for (let i of sprites.allOfKind(SpriteKind.Element)) {
@@ -32,6 +32,17 @@ class GameManager {
                     }
                 }
             }
+            sprites.allOfKind(SpriteKind.Element).forEach(function (i) {
+                if (this.cursor.overlapsWith(i)) {
+                    controller.moveSprite(i, 0, 0)
+                    sprites.allOfKind(SpriteKind.Element).forEach(function (j) {
+                        if (i.overlapsWith(j)) {
+                            this.field[0] = i.data.merge(i, j)
+                        }
+                    })
+                }
+            })
         })
+        
     }
 }

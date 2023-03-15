@@ -1,13 +1,18 @@
 class GameManager {
     cursor: Cursor
-    field: Sprite[]
+    field: Sprite
 
     constructor() {
         this.cursor = new Cursor()
-
+        this.field = sprites.create(elementList.Air.sprite, SpriteKind.Element)
 
         controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-            // TODO
+            this.cursor.bound = 0
+            controller.moveSprite(this.field, 100, 100)
+        })
+        controller.A.onEvent(ControllerButtonEvent.Released, function () {
+            this.cursor.bound = null
+            controller.moveSprite(this.field, 0, 0)
         })
     }
 }

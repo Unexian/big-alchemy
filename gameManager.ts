@@ -13,7 +13,9 @@ class GameManager {
         controller.moveSprite(this.cursor)
 
         this.field[0] = elementList.Air.toSprite()
+        this.field[0].left = 20
         this.field[1] = elementList.Water.toSprite()
+        this.field[1].right = 140
 
         controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             sprites.allOfKind(SpriteKind.Element).forEach(function (i) {

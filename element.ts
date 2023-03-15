@@ -8,6 +8,7 @@ class Element {
         this.name = name
         this.combos = combos
         this.sprite = sprite
+        this.scale = scale
     }
 
     toSprite(): Sprite {
@@ -18,10 +19,11 @@ class Element {
     }
 
     merge(self: Sprite, other: Sprite) {
-        let otherElement = other.data.name
-        let elementTo = self.data.combos[otherElement]
-        elementList[elementTo].toSprite()
+        let out = elementList[self.data.combos[other.data.name]].toSprite()
+        out.x = self.x
+        out.y = self.y
         other.destroy()
         self.destroy()
+        return out
     }
 }

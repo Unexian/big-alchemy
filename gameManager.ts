@@ -17,6 +17,10 @@ class GameManager {
         this.field[1] = elementList.Water.toSprite()
         this.field[1].right = 140
 
+        this.registerControls();
+    }
+
+    private registerControls() {
         controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             sprites.allOfKind(SpriteKind.Element).forEach(function (i) {
                 if (this.cursor.overlapsWith(i)) {
@@ -26,14 +30,18 @@ class GameManager {
             })
         })
         controller.A.onEvent(ControllerButtonEvent.Released, function () {
-            for (let i of sprites.allOfKind(SpriteKind.Element)) {
-                controller.moveSprite(i, 0, 0)
-                for (let j of sprites.allOfKind(SpriteKind.Element)) {
-                    if (i.overlapsWith(j)) {
-                        this.field.push(i.data.merge(i, j))
-                    }
+            this.mergeOverlappingSprites();
+        });
+    }
+
+    private mergeOverlappingSprites() {
+        for (let i of sprites.allOfKind(SpriteKind.Element)) {
+            controller.moveSprite(i, 0, 0)
+            for (let j of sprites.allOfKind(SpriteKind.Element)) {
+                if (i.overlapsWith(j)) {
+                    this.field.push(i.data.merge(i, j))
                 }
             }
-        })
+        }
     }
 }

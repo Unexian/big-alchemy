@@ -150,22 +150,22 @@ let elementList: {[key: string]: Element} = {
     . . . . . . . . . . . . . . . .
     `, 1),
     "Smoke": new Element("Smoke", {}, img`
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . . . . . . . . . .
-    . . . . . . . f f f . . . . . .
-    . . f f f . f f f f . . . . . .
-    . . f f f f f f f f . . . . . .
-    . . f f f f f f . . f f . . . .
-    . . . f f f f . . f f f . . . .
-    . . . . f f f . . f f f . . . .
-    . . . . f f f f f . . . . . . .
-    . . . . f f f f f f . . . . . .
-    . . . . f f f f f f f . . . . .
-    . . . . f f f f f f f . . . . .
-    . . . . f f f f f f f . . . . .
-    . . . . . f f f f f f . . . . .
-    . . . . . . . f f . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . d d d . . . . . .
+        . . d d d . d d d d . . . . . .
+        . . d d d d d d d d . . . . . .
+        . . d d d d d d . . d d . . . .
+        . . . d d d d . . d d d . . . .
+        . . . . d d d . . d d d . . . .
+        . . . . d d d d d . . . . . . .
+        . . . . d d d d d d . . . . . .
+        . . . . d d d d d d d . . . . .
+        . . . . d d d d d d d . . . . .
+        . . . . d d d d d d d . . . . .
+        . . . . . d d d d d d . . . . .
+        . . . . . . . d d . . . . . . .
     `, 1),
     "Steam": new Element("Steam", {}, img`
     . . . . . . . . . . . . . . . .

@@ -38,7 +38,8 @@ let elementList: {[key: string]: Element} = {
     d d d d d d d d d d d d d d d d
     `, 1),
     "Earth": new Element("Earth",
-        { "Water": "Mud", "Fire": "Lava", "Air": "Dust", "Earth": "Land" },
+        { "Water": "Mud", "Fire": "Lava", "Air": "Dust", "Earth": "Land",
+          "Pressure": "Stone"},
         img`
             . . . . . . . . . . . . . . . .
             . . . . . . . . . . . . . . . .
@@ -206,7 +207,7 @@ let elementList: {[key: string]: Element} = {
     . . . . . 9 9 9 9 9 9 9 . . . .
     `, 1),
     "Pressure": new Element("Pressure",
-        {},
+        {"Earth": "Stone"},
         img`
             . . . . . . . . . . . . . . . .
             . . . . . . . . . 1 1 1 1 1 . .
@@ -229,20 +230,20 @@ let elementList: {[key: string]: Element} = {
         {},
         img`
             . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
-            . . . . . . . . . . . . . . . .
+            . . . . . . f f f f . . . . . .
+            . . . . f f c c c c f f . . . .
+            . . . f c c c c c c c c f . . .
+            . . f c c c c c c c c c c f . .
+            . . f c c c c c c c c c c f . .
+            . f c c c c c c c c c c c c f .
+            . f c c c c c c c c c c c c f .
+            f c c c c c c c c c c c c c c f
+            f c c c c c c c c c c c c c c f
+            f c c c c c c c c c c c c c c f
+            f c c c c c c c c c c c c c c f
+            . f c c c c c c c c c c c c f .
+            . . f c c c c c c c c c c f . .
+            . . . f f f f f f f f f f . . .
             . . . . . . . . . . . . . . . .
         `, 1),
     "Land": new Element("Land",

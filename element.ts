@@ -18,7 +18,7 @@ class Element {
         return sprite
     }
 
-    merge(self: Sprite, other: Sprite) {
+    merge(self: Sprite, other: Sprite): Sprite {
         let out: Sprite = elementList[self.data.combos[other.data.name]].toSprite()
         out.x = self.x
         out.y = self.y

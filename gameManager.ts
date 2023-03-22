@@ -30,21 +30,10 @@ class GameManager {
                 controller.moveSprite(i, 0, 0)
                 for (let j of sprites.allOfKind(SpriteKind.Element)) {
                     if (i.overlapsWith(j)) {
-                        this.field[0] = i.data.merge(i, j)
+                        this.field.push(i.data.merge(i, j))
                     }
                 }
             }
-            sprites.allOfKind(SpriteKind.Element).forEach(function (i) {
-                if (this.cursor.overlapsWith(i)) {
-                    controller.moveSprite(i, 0, 0)
-                    sprites.allOfKind(SpriteKind.Element).forEach(function (j) {
-                        if (i.overlapsWith(j)) {
-                            this.field[0] = i.data.merge(i, j)
-                        }
-                    })
-                }
-            })
         })
-        
     }
 }

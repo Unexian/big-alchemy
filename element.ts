@@ -12,16 +12,17 @@ class Element {
     }
 
     toSprite(): Sprite {
-        let sprite = sprites.create(this.sprite, SpriteKind.Element)
+        let sprite: Sprite = sprites.create(this.sprite, SpriteKind.Element)
         sprite.data = this
         sprite.setScale(1 / this.scale, ScaleAnchor.Middle)
         return sprite
     }
 
     merge(self: Sprite, other: Sprite) {
-        let out = elementList[self.data.combos[other.data.name]].toSprite()
+        let out: Sprite = elementList[self.data.combos[other.data.name]].toSprite()
         out.x = self.x
         out.y = self.y
+        out.data.scale = elementList[self.data.combos[other.data.name]].scale
         other.destroy()
         self.destroy()
         return out

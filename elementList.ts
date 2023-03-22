@@ -50,13 +50,13 @@ let elementList: {[key: string]: Element} = {
             . . . . . . . . . . . . . . . .
             . . . . . . e e e e . . . . . .
             . . . . . e e e e e e . . . . .
-            . . . . e e e e d d e e . . . .
-            . . . . e e e d e e d e . . . .
+            . . . . e e e e d e e e . . . .
+            . . . . e e e e e e d e . . . .
             . . . e e e d e e e d e e . . .
-            . . e e e d e e e e e d e e . .
+            . . e e e e e e e e e e e e . .
             . . e d d e e e e e e e d e e .
-            . e e d e e e e e e e e e d e .
-            e e d e e e e e e e e e e e d e
+            . e e e e e e e e e e e e d e .
+            e e d e e e e e e e e e e e e e
         `, 1),
     "Energy": new Element("Energy", {}, img`
     . . 5 5 5 5 5 5 5 5 5 5 5 5 . .

@@ -48,7 +48,7 @@ class GameManager {
                     let merge = i.data.merge(i, j)
                     this.field.push(merge)
                     if (this.found.indexOf(merge.name) == -1) {
-                        game.splash("You found a new element:\n" + merge.name)
+                        game.showLongText("You found a new element: " + merge.name, DialogLayout.Bottom)
                         console.log(merge)
                     }
                     i.destroy()

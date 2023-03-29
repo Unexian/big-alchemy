@@ -1,6 +1,6 @@
 let elementList: {[key: string]: Element} = {
     "Air": new Element("Air",
-        { "Fire": "Smoke", "Water": "Mist", "Earth": "Dust", "Air": "Pressure", "Animal": "Bird", "Atmosphere": "Pressure", "City": "Smog", "Cloud": "Sky", "Cold": "Chill", "Container": "Scuba Tank", "Dinosaur": "Pterodactyl", "Egg": "Bird" },
+        { "Fire": "Smoke", "Water": "Mist", "Earth": "Dust", "Air": "Pressure", "Animal": "Bird", "Atmosphere": "Pressure", "City": "Smog", "Cloud": "Sky", "Cold": "Chill", "Container": "Scuba Tank", "Dinosaur": "Pterodactyl", "Egg": "Bird", "Electricity": "Ozone", "Energy": "Heat", "Fish": "Flying Fish", "Heat": "Warmth", "Idea": "Gas", "Land": "Dust", "Lava": "Stone" },
         img`
     . . . . . . . . . . . . . . . .
     . 1 . . . . . . . 1 . . . . . .

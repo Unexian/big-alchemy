@@ -23,8 +23,6 @@ class Element {
         out.x = self.x
         out.y = self.y
         out.data.scale = elementList[self.data.combos[other.data.name]].scale
-        other.destroy()
-        self.destroy()
         return out
     }
 }

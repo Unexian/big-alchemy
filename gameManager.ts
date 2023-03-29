@@ -1,6 +1,7 @@
 class GameManager {
     cursor: Sprite
     field: Sprite[] = []
+    found: String[] = ["Air", "Water", "Fire", "Earth"]
 
     constructor() {
         this.cursor = sprites.create(img`
@@ -11,6 +12,7 @@ class GameManager {
             . f f f .
         `, SpriteKind.Player)
         controller.moveSprite(this.cursor)
+        this.cursor.z = 100
 
         this.field[0] = elementList.Air.toSprite()
         this.field[0].left = 20
@@ -32,6 +34,10 @@ class GameManager {
         controller.A.onEvent(ControllerButtonEvent.Released, function () {
             this.mergeOverlappingSprites();
         });
+
+        controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+            this.createNewElement();
+        })
     }
 
     private mergeOverlappingSprites() {
@@ -39,9 +45,29 @@ class GameManager {
             controller.moveSprite(i, 0, 0)
             for (let j of sprites.allOfKind(SpriteKind.Element)) {
                 if (i.overlapsWith(j)) {
-                    this.field.push(i.data.merge(i, j))
+                    let merge = i.data.merge(i, j)
+                    this.field.push(merge)
+                    if (this.found.indexOf(merge.name) == -1) {
+                        game.splash("You found a new element:\n" + merge.name)
+                        console.log(merge)
+                    }
+                    i.destroy()
+                    j.destroy()
                 }
             }
+        }
+    }
+
+    private createNewElement() {
+        let element = game.askForString("Choose an element")
+        if (element === undefined) { return }
+        element = toLowerFirstUpper(element)
+        if (elementList[element] && this.found.indexOf(element) != -1) {
+            this.field.push(elementList[element].toSprite())
+            this.field[this.field.length-1].x = this.cursor.x
+            this.field[this.field.length-1].y = this.cursor.y
+        } else {
+            game.splash("Element does not exist")
         }
     }
 }

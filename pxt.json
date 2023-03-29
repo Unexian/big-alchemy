@@ -11,7 +11,8 @@
         "assets.json",
         "element.ts",
         "gameManager.ts",
-        "elementList.ts"
+        "elementList.ts",
+        "utils.ts"
     ],
     "testFiles": [
         "test.ts"

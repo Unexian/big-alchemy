@@ -54,20 +54,18 @@ class GameManager {
                             this.found.push(merge.data.name)
                         }
                         this.field.push(merge)
-                    }
-                }
-            }
-        }
-    }
+    }   }   }   }   }
 
     private createNewElement() {
         let element = game.askForString("Choose an element")
         if (element === undefined) { return }
         element = toLowerFirstUpper(element)
-        if (elementList[element] && this.found.indexOf(element) != -1) {
+        if (this.found.indexOf(element) != -1) {
             this.field.push(elementList[element].toSprite())
             this.field[this.field.length-1].x = this.cursor.x
             this.field[this.field.length-1].y = this.cursor.y
+        } else if (elementList[element]) {
+            game.splash("Element has not been discovered")
         } else {
             game.splash("Element does not exist")
         }

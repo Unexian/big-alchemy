@@ -16,8 +16,16 @@ class GameManager {
 
         this.field[0] = elementList.Air.toSprite()
         this.field[0].left = 20
+        this.field[0].top = 30
         this.field[1] = elementList.Water.toSprite()
-        this.field[1].right = 140
+        this.field[1].right = 80
+        this.field[1].top = 30
+        this.field[2] = elementList.Earth.toSprite()
+        this.field[2].left = 20
+        this.field[2].bottom = 90
+        this.field[3] = elementList.Fire.toSprite()
+        this.field[3].right = 80
+        this.field[3].bottom = 90
 
         this.registerControls();
     }

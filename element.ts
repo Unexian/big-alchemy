@@ -18,11 +18,14 @@ class Element {
         return sprite
     }
 
-    merge(self: Sprite, other: Sprite): Sprite {
-        let out: Sprite = elementList[self.data.combos[other.data.name]].toSprite()
-        out.x = self.x
-        out.y = self.y
-        out.data.scale = elementList[self.data.combos[other.data.name]].scale
-        return out
+    merge(self: Sprite, other: Sprite): Sprite | false {
+        if (self.data.combos[other.data.name] !== undefined) {
+            let out: Sprite = elementList[self.data.combos[other.data.name]].toSprite()
+            out.x = self.x
+            out.y = self.y
+            out.data.scale = elementList[self.data.combos[other.data.name]].scale
+            return out
+        }
+        return false
     }
 }

@@ -46,13 +46,13 @@ class GameManager {
             for (let j of sprites.allOfKind(SpriteKind.Element)) {
                 if (i.overlapsWith(j)) {
                     let merge = i.data.merge(i, j)
-                    this.field.push(merge)
-                    if (this.found.indexOf(merge.name) == -1) {
-                        game.showLongText("You found a new element: " + merge.name, DialogLayout.Bottom)
-                        console.log(merge)
-                    }
                     i.destroy()
                     j.destroy()
+                    if (this.found.indexOf(merge.data.name) == -1) {
+                        game.showLongText("You found a new element: " + merge.data.name, DialogLayout.Bottom)
+                        this.found.push(merge.data.name)
+                    }
+                    this.field.push(merge)
                 }
             }
         }

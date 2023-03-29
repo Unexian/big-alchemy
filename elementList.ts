@@ -1,6 +1,6 @@
 let elementList: {[key: string]: Element} = {
     "Air": new Element("Air",
-        { "Fire": "Smoke", "Water": "Mist", "Earth": "Dust", "Air": "Pressure" },
+        { "Fire": "Smoke", "Water": "Mist", "Earth": "Dust", "Air": "Pressure", "Animal": "Bird", "Atmosphere": "Pressure", "City": "Smog", "Cloud": "Sky", "Cold": "Chill", "Container": "Scuba Tank", "Dinosaur": "Pterodactyl", "Egg": "Bird" },
         img`
     . . . . . . . . . . . . . . . .
     . 1 . . . . . . . 1 . . . . . .
@@ -285,6 +285,25 @@ let elementList: {[key: string]: Element} = {
             . . . . . . . 9 9 . . . . . . .
             . . . . . . . . . . . . . . . .
             . . . . . . . . . . . . . . . .
+        `, 1),
+    "Acid Rain": new Element("Acid Rain",
+        {"Planet": "Venus"},
+        img`
+            . . . . . . . . . . . . . . . .
+            . . . . c c c c c c c c . . . .
+            . . c c c c c c c c c c c c . .
+            . c c c c c c c c c c c c c c .
+            . c c c c c c c c c c c c c c .
+            . . c c c . . . . c c c . . . .
+            . . c c . . . . . c c . . . 7 .
+            . . . . . . . . . . 7 . . . 7 .
+            . . 7 . . . 7 . . . 7 . . . . .
+            . . 7 . . . 7 . . . . . 7 . . .
+            . . . . . . . . . . . . 7 . . .
+            . . . 7 . . . . . 7 . . . . . .
+            . . . 7 . . 7 . . 7 . 7 . . . .
+            . . . . . . 7 . . . . 7 . 7 . .
+            . . . . 7 . . . 7 . . . . 7 . .
+            . . . . 7 . . . 7 . . . . . . .
         `, 1)
-
 }
